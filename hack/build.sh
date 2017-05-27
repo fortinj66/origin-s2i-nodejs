@@ -13,7 +13,7 @@ OS=${1-$OS}
 VERSION=${2-$VERSION}
 
 DOCKERFILE="Dockerfile"
-if [ "${ONBUILD}+enabled" ]; then
+if [ -n "${ONBUILD}" ]; then
   BASE_IMAGE_NAME="${ONBUILD_IMAGE_NAME}"
   DOCKERFILE+=".onbuild"
 fi
@@ -51,7 +51,7 @@ versions=${VERSION:-$VERSIONS}
 for version in ${versions}; do
   IMAGE_NAME="${NAMESPACE}/${OS}-${BASE_IMAGE_NAME}"
 
-  if [ "${TEST_MODE}+enabled" ]; then
+  if [ -n "${TEST_MODE}" ]; then
     IMAGE_NAME+="-candidate"
   fi
 
@@ -64,7 +64,7 @@ for version in ${versions}; do
     docker_build_with_version Dockerfile
   fi
 
-  if [ "${TEST_MODE}+enabled" ]; then
+  if [ -n "${TEST_MODE}" ]; then
     IMAGE_NAME=${IMAGE_NAME} NODE_VERSION=${version} test/run
 
     if [[ $? -eq 0 ]] && [[ "${TAG_ON_SUCCESS}" == "true" ]]; then
