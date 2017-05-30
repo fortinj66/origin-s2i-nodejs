@@ -6,6 +6,8 @@ for BASE in $BASE_IMAGES ; do
   if [ $(echo "${VERSIONS}" | wc -w) -gt 0 ] ; then
     for RELEASE in $VERSIONS ; do
       img=$(docker images | grep $BASE | grep $RELEASE | head -n 1 | tr -s ' ' | cut -f3 -d' ')
+      echo "versions:${VERSIONS} image:${img} base:${BASE} release:${RELEASE}"
+
       if [[ $RELEASE == 0.10.* ]] ; then
 	echo "tagging ${BASE}:${RELEASE} for release as: ${BASE}:0.10"
         docker tag  $img $BASE:0.10

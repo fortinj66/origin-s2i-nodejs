@@ -2,8 +2,6 @@
 var request = require('request'),
     semver  = require('semver'),
     latest_releases = {
-      '0.10': undefined,
-      '0.12': undefined,
       '4': undefined,
       '5': undefined,
       '6': undefined,

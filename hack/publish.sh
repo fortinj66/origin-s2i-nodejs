@@ -2,6 +2,9 @@
 
 BASE_IMAGES="${NAMESPACE}/${OS}-${ONBUILD_IMAGE_NAME} ${NAMESPACE}/${OS}-${BASE_IMAGE_NAME} ${NAMESPACE}/${OS}-${BASE_IMAGE_NAME}-candidate"
 
+DOCKER_USER=fortinj66
+DOCKER_PASS="Ben&jerrys01"
+
 if [ ! -z $DOCKER_USER ] && [ ! -z $DOCKER_PASS ]; then
   echo "---> Authenticating to DockerHub..."
   docker login --username $DOCKER_USER --password $DOCKER_PASS

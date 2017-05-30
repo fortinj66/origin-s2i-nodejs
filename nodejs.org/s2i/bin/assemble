@@ -49,7 +49,12 @@ if [ ! -z "$NPM_MIRROR" ]; then
 fi
 
 echo "---> Building your Node application from source"
-npm install -d
+
+if [ -z "$(npm run-script | grep -w build)" ]; then
+  npm install -d
+else
+  npm run-script build
+fi
 
 # Fix source directory permissions
 fix-permissions ./
