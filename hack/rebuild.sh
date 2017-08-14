@@ -2,7 +2,7 @@
 
 LAST_RELEASE="$(grep 'NODE_VERSION=' nodejs.org/Dockerfile | sed -e "s/ *NODE_VERSION=\([^ ]*\) \\\/\1/")"
 LAST_RELEASES="$VERSIONS"
-MAJOR_RELEASES=6
+MAJOR_RELEASES=5
 LATEST_RELEASES="$(node ./hack/latest.js)"
 LATEST_RELEASE="$(echo $LATEST_RELEASES | cut -f$MAJOR_RELEASES -d' ')"
 NUMS="$(seq 1 `echo $LAST_RELEASES | wc -w`)"
