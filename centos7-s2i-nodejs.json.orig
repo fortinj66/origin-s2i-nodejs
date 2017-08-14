@@ -1,0 +1,197 @@
+{
+    "kind": "ImageStream",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "nodejs",
+        "generation": 5,
+        "creationTimestamp": null,
+        "annotations": {
+            "openshift.io/image.dockerRepositoryCheck": "2017-05-30T20:35:15Z"
+        }
+    },
+    "spec": {
+        "tags": [
+            {
+                "name": "4",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:4,nodejs:4.8,nodejs",
+                    "tags": "builder,nodejs,nodejs-4.8.3"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:4"
+                },
+                "generation": 1,
+                "importPolicy": {}
+            },
+            {
+                "name": "4.4",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:4,nodejs:4.8,nodejs",
+                    "tags": "builder,nodejs,nodejs-4.8.3"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:4.4"
+                },
+                "generation": 1,
+                "importPolicy": {}
+            },
+            {
+                "name": "4.8.3",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:4,nodejs:4.8,nodejs",
+                    "tags": "builder,nodejs,nodejs-4.8.3,nodejs-lts"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:4.8.3"
+                },
+                "generation": 2,
+                "importPolicy": {}
+            },
+            {
+                "name": "6",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:6,nodejs:6.10,nodejs",
+                    "tags": "builder,nodejs,nodejs-6.10.3"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:6"
+                },
+                "generation": 1,
+                "importPolicy": {}
+            },
+            {
+                "name": "6.10",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:6,nodejs:6.10,nodejs",
+                    "tags": "builder,nodejs,nodejs-6.10.3"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:6.10"
+                },
+                "generation": 1,
+                "importPolicy": {}
+            },
+            {
+                "name": "6.10.3",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:6,nodejs:6.10,nodejs",
+                    "tags": "builder,nodejs,nodejs-6.10.3,nodejs-latest",
+                    "version": "6.10.3"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:6.10.3"
+                },
+                "generation": 2,
+                "importPolicy": {}
+            },
+            {
+                "name": "7.10",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:6,nodejs:7.10,nodejs",
+                    "tags": "builder,nodejs,nodejs-7.10.0,nodejs-current"
+                },
+                "from": {
+                    "kind": "ImageStreamTag",
+                    "name": "7.10.0"
+                },
+                "generation": 1,
+                "importPolicy": {}
+            },
+            {
+                "name": "7.10.0",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:6,nodejs:7.10,nodejs",
+                    "tags": "builder,nodejs,nodejs-7.10.0,nodejs-latest",
+                    "version": "7.10.0"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:7.10.0"
+                },
+                "generation": 5,
+                "importPolicy": {}
+            },
+            {
+                "name": "current",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:6,nodejs:6.10,nodejs",
+                    "tags": "builder,nodejs,nodejs-6.10.3,nodejs-current"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:current"
+                },
+                "generation": 1,
+                "importPolicy": {}
+            },
+            {
+                "name": "latest",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:6,nodejs:6.10,nodejs",
+                    "tags": "builder,nodejs,nodejs-6.10.3"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:latest"
+                },
+                "generation": 1,
+                "importPolicy": {}
+            },
+            {
+                "name": "lts",
+                "annotations": {
+                    "description": "Build and run NodeJS applications",
+                    "iconClass": "icon-nodejs",
+                    "sampleRepo": "https://github.com/ryanj/pillar-base.git",
+                    "supports": "nodejs:4,nodejs:4.8,nodejs",
+                    "tags": "builder,nodejs,nodejs-4.8.3,nodejs-lts"
+                },
+                "from": {
+                    "kind": "DockerImage",
+                    "name": "172.30.33.158:5000/openshift/nodejs:lts"
+                },
+                "generation": 1,
+                "importPolicy": {}
+            }
+        ]
+    },
+    "status": {
+        "dockerImageRepository": ""
+    }
+}

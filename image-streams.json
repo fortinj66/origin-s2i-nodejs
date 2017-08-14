@@ -1,0 +1,178 @@
+{
+  "kind": "ImageStreamList",
+  "apiVersion": "v1",
+  "metadata": {},
+  "items": [
+    {
+      "kind": "ImageStream",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "nodejs",
+        "creationTimestamp": null
+      },
+      "spec": {
+        "tags": [
+          {
+            "name": "lts",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4,nodejs-lts",
+              "supports":"nodejs:4,nodejs:4.8,nodejs",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "ImageStreamTag",
+              "name": "4.8.4"
+            }
+          },
+          {
+            "name": "4",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4",
+              "supports":"nodejs:4,nodejs:4.8,nodejs",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "ImageStreamTag",
+              "name": "4.8.4"
+            }
+          },
+          {
+            "name": "4.4",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4",
+              "supports":"nodejs:4,nodejs:4.8,nodejs",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "ImageStreamTag",
+              "name": "4.8.4"
+            }
+          },
+          {
+            "name": "4.8.4",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4,nodejs-lts",
+              "supports":"nodejs:4,nodejs:4.8,nodejs",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "DockerImage",
+              "name": "fortinj66/centos7-s2i-nodejs:4.8.4"
+            }
+          },
+          {
+            "name": "6",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-6.11.1",
+              "supports":"nodejs:6,nodejs:6.10,nodejs",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "ImageStreamTag",
+              "name": "6.11.1"
+            }
+          },
+          {
+            "name": "6.11.1",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-6.11.1,nodejs-latest",
+              "supports":"nodejs:6,nodejs:6.10,nodejs",
+              "version": "6.11.1",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "DockerImage",
+              "name": "fortinj66/centos7-s2i-nodejs:6.11.1"
+            }
+          },
+          {
+            "name": "7",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4,nodejs-latest",
+              "supports":"nodejs:7,nodejs:7.10,nodejs",
+              "version": "4.8.4",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "DockerImage",
+              "name": "fortinj66/centos7-s2i-nodejs:4.8.4"
+            }
+          }, 
+          {
+            "name": "7.10",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4,nodejs-latest",
+              "supports":"nodejs:7,nodejs:7.10,nodejs",
+              "version": "4.8.4",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "DockerImage",
+              "name": "fortinj66/centos7-s2i-nodejs:4.8.4"
+            }
+          },
+          {
+            "name": "current",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4,nodejs-current",
+              "supports":"nodejs:7,nodejs:7.10,nodejs",
+              "version": "4.8.4",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "ImageStreamTag",
+              "name": "4.8.4"
+            }
+          },
+          {
+            "name": "latest",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4,nodejs-current",
+              "supports":"nodejs:7,nodejs:7.10,nodejs",
+              "version": "4.8.4",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "ImageStreamTag",
+              "name": "4.8.4"
+            }
+          },
+          {
+            "name": "4.8.4",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-4.8.4,nodejs-latest",
+              "supports":"nodejs:7,nodejs:7.10,nodejs",
+              "version": "4.8.4",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "DockerImage",
+              "name": "fortinj66/centos7-s2i-nodejs:4.8.4"
+            }
+        ]
+      }
+    }
+  ]
+}
