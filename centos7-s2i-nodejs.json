@@ -7,17 +7,31 @@
       "kind": "ImageStream",
       "apiVersion": "v1",
       "metadata": {
-        "name": "nodejs",
+        "name": "nodejs-ma",
         "creationTimestamp": null
       },
       "spec": {
         "tags": [
           {
+            "name": "12.13.1",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-12.13.1",
+              "supports":"nodejs:12,nodejs:12.13,nodejs",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "DockerImage",
+              "name": "fortinj66/centos7-s2i-nodejs:12.13.1"
+            }
+          },
+          {
             "name": "8.1.4",
             "annotations": {
               "description": "Build and run NodeJS applications",
               "iconClass": "icon-nodejs",
-              "tags": "builder,nodejs,nodejs-8.1.4,nodejs-latest",
+              "tags": "builder,nodejs,nodejs-8.1.4",
               "supports":"nodejs:8,nodejs:8.1,nodejs",
               "sampleRepo": "https://github.com/ryanj/pillar-base.git"
             },
@@ -27,17 +41,32 @@
             }
           },
           {
+            "name": "8.9.4",
+            "annotations": {
+              "description": "Build and run NodeJS applications",
+              "iconClass": "icon-nodejs",
+              "tags": "builder,nodejs,nodejs-8.9.4,nodejs-latest",
+              "supports":"nodejs:8,nodejs:8.9,nodejs",
+              "sampleRepo": "https://github.com/ryanj/pillar-base.git"
+            },
+            "from": {
+              "kind": "DockerImage",
+              "name": "fortinj66/centos7-s2i-nodejs:8.9.4"
+            }
+          },
+
+          {
             "name": "latest",
             "annotations": {
               "description": "Build and run NodeJS applications",
               "iconClass": "icon-nodejs",
-              "tags": "builder,nodejs,nodejs-8.1.4",
-              "supports":"nodejs:8,nodejs:8.1,nodejs",
+              "tags": "builder,nodejs,nodejs-8.9.4",
+              "supports":"nodejs:8,nodejs:8.9,nodejs",
               "sampleRepo": "https://github.com/ryanj/pillar-base.git"
             },
             "from": {
               "kind": "ImageStreamTag",
-              "name": "8.1.4"
+              "name": "8.9.4"
             }
           }
         ]
