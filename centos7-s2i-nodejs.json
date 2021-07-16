@@ -13,17 +13,17 @@
       "spec": {
         "tags": [
           {
-            "name": "12.13.1",
+            "name": "4.9.1",
             "annotations": {
               "description": "Build and run NodeJS applications",
               "iconClass": "icon-nodejs",
-              "tags": "builder,nodejs,nodejs-12.13.1",
+              "tags": "builder,nodejs,nodejs-4.9.1",
               "supports":"nodejs:12,nodejs:12.13,nodejs",
               "sampleRepo": "https://github.com/ryanj/pillar-base.git"
             },
             "from": {
               "kind": "DockerImage",
-              "name": "fortinj66/centos7-s2i-nodejs:12.13.1"
+              "name": "fortinj66/centos7-s2i-nodejs:4.9.1"
             }
           },
           {

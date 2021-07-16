@@ -1,17 +1,12 @@
 FROM openshift/base-centos7
 
-# This image provides a Node.JS environment you can use to run your Node.JS
-# applications.
-
-MAINTAINER RyanJ <ryanj@redhat.com>
-
 EXPOSE 8080
 
 # This image will be initialized with "npm run $NPM_RUN"
 # See https://docs.npmjs.com/misc/scripts, and your repo's package.json
 # file for possible values of NPM_RUN
 ENV NPM_RUN=start \
-    NODE_VERSION=8.1.4 \
+    NODE_VERSION=12.13.1 \
     NPM_CONFIG_LOGLEVEL=info \
     NPM_CONFIG_PREFIX=$HOME/.npm-global \
     PATH=$HOME/node_modules/.bin/:$HOME/.npm-global/bin/:$PATH \

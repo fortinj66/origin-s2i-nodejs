@@ -8,6 +8,7 @@
   "version": "0.0.2",
   "description": "NodeJS images for OpenShift / Kubernetes, based on CentOS",
   "dependencies": {
+    "6": "0.0.1",
     "request": "^2.72.0",
     "semver": "^5.1.0"
   },
